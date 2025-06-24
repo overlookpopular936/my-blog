@@ -155,6 +155,7 @@ export default defineConfig({
     lang: "zh-CN",
     srcDir: "src",
     outDir: "dist",
+    base: "my-blog",
     lastUpdated: true,
     cleanUrls: true,
 
