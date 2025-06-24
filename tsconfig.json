@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // 目标 ECMAScript 版本
+    "module": "esnext", // 模块代码生成
+    "strict": true, // 启用所有严格类型检查选项
+    "jsx": "preserve", // 处理 JSX，保留为 React.createElement
+    "importHelpers": true, // 从 'tslib' 导入辅助函数
+    "moduleResolution": "node", // 模块解析策略
+    "skipLibCheck": true, // 跳过声明文件的类型检查
+    "esModuleInterop": true, // 允许默认导入 CommonJS 模块
+    "allowSyntheticDefaultImports": true, // 允许默认导入没有设置默认导出的模块
+    "sourceMap": true, // 生成 SourceMap 文件
+    "baseUrl": ".", // 基础目录
+    "types": ["vite/client"], // 包含的类型声明文件
+    "paths": {
+      "@/*": ["src/*"] // 路径别名
+    },
+    "lib": ["esnext", "dom"], // 编译过程中需要引入的库文件
+    "resolveJsonModule": true // 允许导入 .json 文件
+  },
+  "include": ["src/**/*.ts", "src/**/*.vue", "index.ts"], // 需要编译的文件
+  "exclude": ["node_modules"] // 需要排除的文件
+}
